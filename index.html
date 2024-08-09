@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page|Travel</title>
+  </head>
+  <body>
+    <header id="home">
+      <video autoplay muted loop id="myVideo">
+        <source src="1.mp4" type="video/mp4">
+      </video>
+    <div class="container">
+      <nav>
+        <div class="nav__logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <ul class="nav__links">
+          <li class="link_active"><a href="#home">Home</a></li>
+          <li class="link"><a href="#destination">Destinations</a></li>
+          <li class="link"><a href="#contactus">Contact Us</a></li>
+          
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <span><i class="ri-search-line"></i></span>
+        </div>
+        <div class="login">
+          <span><i class="ri-user-3-fill"></i></span>
+          Log In    
+        </div>
+      </nav>
+      <div class="destination__container">
+        <div class="socials">
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
+        </div>
+        <div class="content">
+          <h1>EXPLORE<br />DREAM<br /><span>DESTINATION</span></h1>
+          <p>
+            It encourages exploration of unfamiliar territories, embracing
+            diverse cultures and landscapes, while pursuing the desired
+            destination that captivates the heart and ignites a sense of wonder.
+          </p>
+          <button class="btn">BOOK NOW</button>
+        </div>      
+      </div>
+    </div>
+  </header>
+    
+    
+    
+    
+    <section class="rooms" id="destination">
+      <h1 class="section-title">Popular Tours</h1>
+      <p>
+        Where luxury and exploration meet
+      </p>
+      <div class="rooms-area">
+
+          <div class="room" data-aos="fade-up" data-aos-duration="1000">
+              <div class="room-img">
+                  <img class="room-image" src="goa.jpeg">
+              </div>
+              <div class="room-details">
+                  <h2>Goa</h2>
+                  <h3>Starting at Rs 2,500/person</h3>
+                  <button class="btn_2">
+                      Know More
+                  </button>
+              </div>
+          </div>
+
+          <div class="room" data-aos="fade-up" data-aos-duration="1000">
+              <div class="room-img">
+                  <img class="room-image" src="kashmir.jpeg">
+              </div>
+              <div class="room-details">
+                  <h2>Kashmir</h2>
+                  <h3>Starting at Rs 15,000/person</h3>
+                  <button class="btn_2">
+                      Know More
+                  </button>
+              </div>
+          </div>
+
+          <div class="room" data-aos="fade-up" data-aos-duration="1000">
+              <div class="room-img">
+                  <img class="room-image" src="bhutan.jpeg" >
+              </div>
+              <div class="room-details">
+                  <h2>Bhutan</h2>
+                  <h3>Starting at Rs 25,000/person</h3>
+                  <button class="btn_2">
+                      Know More
+                  </button>
+              </div>
+          </div>
+
+          <div class="room" data-aos="fade-up" data-aos-duration="1000">
+              <div class="room-img">
+                  <img class="room-image" src="nepal.jpeg">
+              </div>
+              <div class="room-details">
+                  <h2>Nepal</h2>
+                  <h3>Starting at Rs 17,000/person</h3>
+                  <button class="btn_2">
+                      Know More
+                  </button>
+              </div>
+          </div>
+
+          <div class="room" data-aos="fade-up" data-aos-duration="1000">
+              <div class="room-img" >
+                  <img class="room-image" src="maldives.jpeg">
+              </div>
+              <div class="room-details">
+                  <h2>Maldives</h2>
+                  <h3>Starting at Rs 35,000/person</h3>
+                  <button class="btn_2">
+                      Know More
+                  </button>
+              </div>
+          </div>
+
+          <div class="room" data-aos="fade-up" data-aos-duration="1000">
+              <div class="room-img">
+                  <img class="room-image" src="andaman.jpeg">
+              </div>
+              <div class="room-details">
+                  <h2>Andaman</h2>
+                  <h3>Starting at Rs 25,000/person</h3>
+                  <button class="btn_2">
+                      Know More
+                  </button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+  <div class="contact-container" id="contactus">
+    <div class="left-col">
+      <img class="logo" src="logo.png"/>
+    </div>
+    <div class="right-col">
+      <h1 class="contact_us">Contact us</h1>
+      <p class="contact_us_para">Planning to go on a trip?..Get insider tips on where to go, things to do and find best deals for your next adventure.</p>
+      
+    <form id="contact-form" method="post">
+    <label for="name">Full name</label>
+    <input class="input_footer" type="text" id="name" name="name" placeholder="Your Full Name" required>
+    <label for="email">Email Address</label>
+    <input class="input_footer" type="email" id="email" name="email" placeholder="Your Email Address" required>
+    <label for="message">Message</label>
+    <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+    <button type="submit" id="submit" name="submit" class="send_btn">Send</button>
+    
+  </form>
+  <div id="error"></div>
+  <div id="success-msg"></div>
+    </div>
+  </div>
+  </body>
+</html>
